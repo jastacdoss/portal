@@ -1,383 +1,249 @@
 <template>
-  <div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card card-stats card-raised">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="statistics">
-                  <div class="info">
-                    <div class="icon icon-primary">
-                      <i class="now-ui-icons ui-2_chat-round"></i>
+    <div class="dashboard">
+        <div class="row">
+            <div class="col">
+                <card class="stacked-form" title="Profile">
+                    <h4 slot="header" class="card-title">
+                        <i class="fas fa-user"></i> Profile
+                    </h4>
+                    <h4 class="mt-0 text-info">Jason Doss</h4>
+
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="card-subtitle mb-2 text-muted">Mailing Address</h6>
+                            <p class="card-text">
+                                123 Aviation Lane<br>
+                                Jacksonville, FL 32046
+                            </p>
+                            <h6 class="card-subtitle mb-2 text-muted">Phone</h6>
+                            <p class="card-text">
+                                <b>c:</b> 123-456-7890<br>
+                                <b>h:</b> 123-456-7890<br>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <h6 class="card-subtitle mb-2 text-muted">Facility</h6>
+                                    <p class="card-text">
+                                        ZJX
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <h6 class="card-subtitle mb-2 text-muted">Region</h6>
+                                    <p class="card-text">
+                                        NSO
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <h6 class="card-subtitle mb-2 text-muted">Unit</h6>
+                                    <p class="card-text">
+                                        0061
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="card-subtitle mb-2 text-muted">Senators</h6>
+                                    <p class="card-text">
+                                        Bill Nelson - D<br>
+                                        Marco Rubio -R<br>
+                                    </p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Representative</h6>
+                                    <p class="card-text">
+                                        Ted Yoho - R
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="info-title">
-                      <animated-number :value="853"></animated-number>
-                    </h3>
-                    <h6 class="stats-title">Messages</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="statistics">
-                  <div class="info">
-                    <div class="icon icon-success">
-                      <i class="now-ui-icons business_money-coins"></i>
-                    </div>
-                    <h3 class="info-title">
-                      <small>$</small>
-                      <animated-number :value="3521"></animated-number>
-                    </h3>
-                    <h6 class="stats-title">Today Revenue</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="statistics">
-                  <div class="info">
-                    <div class="icon icon-info">
-                      <i class="now-ui-icons users_single-02"></i>
-                    </div>
-                    <h3 class="info-title">
-                      <animated-number :value="562"></animated-number>
-                    </h3>
-                    <h6 class="stats-title">Customers</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="statistics">
-                  <div class="info">
-                    <div class="icon icon-danger">
-                      <i class="now-ui-icons objects_support-17"></i>
-                    </div>
-                    <h3 class="info-title">
-                      <animated-number :value="353"></animated-number>
-                    </h3>
-                    <h6 class="stats-title">Support Requests</h6>
-                  </div>
-                </div>
-              </div>
+                </card>
+
+                <card class="stacked-form" title="Job History">
+                    <h4 slot="header" class="card-title">
+                        <i class="fas fa-history"></i> Job History
+                    </h4>
+                    <el-table class="table-striped" :data="history">
+                        <el-table-column prop="region" label="Region" class-name="text-uppercase"></el-table-column>
+                        <el-table-column prop="facility" label="Facility" class-name="text-uppercase"></el-table-column>
+                        <el-table-column prop="unit" label="Unit"></el-table-column>
+                        <el-table-column prop="start" label="Start"></el-table-column>
+                        <el-table-column prop="end" label="End"></el-table-column>
+                    </el-table>
+                </card>
             </div>
-          </div>
+            <div class="col">
+                <card class="stacked-form" title="Facility Info">
+                    <h4 slot="header" class="card-title">
+                        <i class="far fa-building"></i> Facility Info
+                    </h4>
+                    <h4 class="mt-0 text-info">Jacksonville ARTCC</h4>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <h6 class="card-subtitle mb-2 text-muted">Mailing Address</h6>
+                            <p class="card-text">
+                                1 Aviation Lane<br>
+                                Jacksonville, FL 32046
+                            </p>
+                            <h6 class="card-subtitle mb-2 text-muted">Phone</h6>
+                            <p class="card-text">
+                                123-456-7890
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h6 class="card-subtitle mb-2 text-muted">Level</h6>
+                            <p class="card-text">
+                                11
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="card-subtitle mb-2 text-muted">Miscellaneous</h6>
+                            <p class="card-text">
+                                Wifi Password: helloworld!
+                                To connect to wifi visit http://natcazjx.org and enter MAC address
+                            </p>
+                        </div>
+                    </div>
+                </card>
 
+                <card class="stacked-form" title="Finances">
+                    <h4 slot="header" class="card-title">
+                        <i class="fas fa-dollar-sign"></i> Finances
+                    </h4>
+                    <el-table class="table-striped" :data="finances">
+                        <el-table-column prop="effective" label="Effective"></el-table-column>
+                        <el-table-column prop="salary" label="Salary"></el-table-column>
+                        <el-table-column prop="dues" label="Dues"></el-table-column>
+                        <el-table-column prop="pac" label="PAC"></el-table-column>
+                    </el-table>
+                </card>
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <div class="col">
+                <card class="stacked-form" title="Representatives">
+                    <h4 slot="header" class="card-title">
+                        <i class="fas fa-users"></i> Representatives
+                    </h4>
+                    <el-table class="table-striped" :data="reps">
+                        <el-table-column prop="title" label="Title"></el-table-column>
+                        <el-table-column prop="name" label="Name"></el-table-column>
+                        <el-table-column prop="email" label="Email"></el-table-column>
+                        <el-table-column prop="phone" label="Phone"></el-table-column>
+                    </el-table>
+                </card>
+            </div>
+        </div>
     </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <card class="card-chart" no-footer-line>
-          <div slot="header">
-            <h5 class="card-category">Active Users</h5>
-            <h2 class="card-title">
-              <animated-number :value="34252">
-
-              </animated-number>
-            </h2>
-            <drop-down :hide-arrow="true" position="right">
-              <n-button slot="title" class="dropdown-toggle no-caret" round simple icon>
-                <i class="now-ui-icons loader_gear"></i>
-              </n-button>
-
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <a class="dropdown-item text-danger" href="#">Remove Data</a>
-            </drop-down>
-
-          </div>
-          <div class="chart-area">
-            <line-chart :labels="charts.activeUsers.labels"
-                       :data="charts.activeUsers.data"
-                       :color="charts.activeUsers.color"
-                       :height="200">
-            </line-chart>
-          </div>
-          <div class="table-responsive">
-            <n-table :data="tableData">
-              <template slot-scope="{row}">
-                <td>
-                  <div class="flag">
-                    <img :src="row.flag">
-                  </div>
-                </td>
-                <td>{{row.country}}</td>
-                <td class="text-right">
-                  {{row.value}}
-                </td>
-                <td class="text-right">
-                  {{row.percentage}}
-                </td>
-              </template>
-            </n-table>
-          </div>
-          <div slot="footer" class="stats">
-            <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-          </div>
-        </card>
-      </div>
-
-      <div class="col-lg-4">
-        <card class="card-chart" no-footer-line>
-          <div slot="header">
-            <h5 class="card-category">Summer Email Campaign</h5>
-            <h2 class="card-title">
-              <animated-number :value="55300">
-              </animated-number>
-            </h2>
-            <drop-down position="right">
-              <n-button slot="title" class="dropdown-toggle no-caret" round simple icon>
-                <i class="now-ui-icons loader_gear"></i>
-              </n-button>
-
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <a class="dropdown-item text-danger" href="#">Remove Data</a>
-            </drop-down>
-
-          </div>
-          <div class="chart-area">
-            <line-chart :labels="charts.emailsCampaign.labels"
-                       :data="charts.emailsCampaign.data"
-                       :color="charts.emailsCampaign.color"
-                       :height="200">
-            </line-chart>
-          </div>
-          <div class="card-progress">
-            <n-progress label="Delivery Rate" :value="90" show-value></n-progress>
-            <n-progress type="success" label="Open Rate" :value="60" show-value></n-progress>
-            <n-progress type="info" label="Click Rate" :value="12" show-value></n-progress>
-            <n-progress type="warning" label="Hard Bounce" :value="5" show-value></n-progress>
-            <n-progress type="danger" label="Spam Report" :value="0.11" show-value></n-progress>
-          </div>
-          <div slot="footer" class="stats">
-            <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-          </div>
-        </card>
-      </div>
-
-      <div class="col-lg-4">
-        <card class="card-chart" no-footer-line>
-          <div slot="header">
-            <h5 class="card-category">Active Countries</h5>
-            <h2 class="card-title">
-              <animated-number :value="105">
-              </animated-number>
-            </h2>
-          </div>
-          <div class="chart-area">
-            <line-chart :labels="charts.activeCountries.labels"
-                       :data="charts.activeCountries.data"
-                       :color="charts.activeCountries.color"
-                       :height="200">
-            </line-chart>
-          </div>
-
-          <async-world-map class="map" :data="mapData"></async-world-map>
-
-          <div slot="footer" class="stats">
-            <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-          </div>
-        </card>
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <card>
-          <h4 slot="header" class="card-title">Best Selling Products</h4>
-          <div class="table-responsive">
-            <n-table class="table-shopping" :data="productsTable">
-              <template slot="columns">
-                <th class="text-center"></th>
-                <th>Product</th>
-                <th>Color</th>
-                <th>Size</th>
-                <th class="text-right">
-                  Price
-                </th>
-                <th class="text-right">
-                  Qty
-                </th>
-                <th class="text-right">
-                  Amount
-                </th>
-              </template>
-              <template slot-scope="{row}">
-                <td>
-                  <div class="img-container">
-                    <img :src="row.image" alt="...">
-                  </div>
-                </td>
-                <td class="td-name">
-                  <a href="#jacket">{{row.title}}</a>
-                  <br>
-                  <small>{{row.subTitle}}</small>
-                </td>
-                <td>{{row.color}}</td>
-                <td>{{row.size}}</td>
-                <td class="td-number">
-                  <small>€</small>
-                  {{row.price}}
-                </td>
-                <td class="td-number">
-                  {{row.quantity}}
-                </td>
-                <td class="td-number">
-                  <small>€</small>
-                  {{row.amount}}
-                </td>
-              </template>
-              <template slot="summary-row">
-                <td colspan="5">
-                </td>
-                <td class="td-total">
-                  Total
-                </td>
-                <td class="td-price">
-                  <small>€</small>
-                  2,346
-                </td>
-              </template>
-            </n-table>
-          </div>
-        </card>
-      </div>
-    </div>
-
-  </div>
 </template>
 <script>
-  import {
-    StatsCard,
-    Card,
-    Table as NTable,
-    Checkbox,
-    AnimatedNumber,
-    Progress as NProgress,
-    LineChart,
-    AsyncWorldMap
-  } from 'src/components'
+    import {Table, TableColumn} from 'element-ui';
 
-  export default {
-    components: {
-      Checkbox,
-      Card,
-      NTable,
-      StatsCard,
-      AnimatedNumber,
-      LineChart,
-      NProgress,
-      AsyncWorldMap
-    },
-    data() {
-      return {
-        progress: 0,
-        charts: {
-          activeUsers: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-            data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630],
-            color: '#f96332'
-          },
-          emailsCampaign: {
-            labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
-            data: [40, 500, 650, 700, 1200, 1250, 1300, 1900],
-            color: '#18ce0f'
-          },
-          activeCountries: {
-            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
-            data: [80, 78, 86, 96, 83, 85, 76, 75, 88, 90],
-            color: '#2CA8FF'
-          }
+    export default {
+        components: {
+            [Table.name]: Table,
+            [TableColumn.name]: TableColumn
         },
-        tableData: [
-          {
-            flag: require('@/assets/img/US.png'),
-            country: 'USA',
-            value: '2.920',
-            percentage: '53.23%'
-          },
-          {
-            flag: require('@/assets/img/DE.png'),
-            country: 'Germany',
-            value: '1.300',
-            percentage: '20.43%'
-          },
-          {
-            flag: require('@/assets/img/AU.png'),
-            country: 'Australia',
-            value: '760',
-            percentage: '10.35%'
-          },
-          {
-            flag: require('@/assets/img/GB.png'),
-            country: 'United Kingdom',
-            value: '690',
-            percentage: '7.87%'
-          },
-          {
-            flag: require('@/assets/img/RO.png'),
-            country: 'United Kingdom',
-            value: '600',
-            percentage: '5.94%'
-          },
-          {
-            flag: require('@/assets/img/BR.png'),
-            country: 'Brasil',
-            value: '550',
-            percentage: '4.34%'
-          }
-        ],
-        productsTable: [
-          {
-            image: require('@/assets/img/saint-laurent.jpg'),
-            title: 'Suede Biker Jacket',
-            subTitle: 'by Saint Laurent',
-            color: 'Black',
-            size: 'M',
-            price: 3390,
-            quantity: 1,
-            amount: 3390
-          },
-          {
-            image: require('@/assets/img/balmain.jpg'),
-            title: 'Jersey T-Shirt ',
-            subTitle: 'by Balmain',
-            color: 'Black',
-            size: 'M',
-            price: 499,
-            quantity: 2,
-            amount: 998
-          },
-          {
-            image: require('@/assets/img/prada.jpg'),
-            title: 'Slim-Fit Swim Short ',
-            subTitle: 'by Prada',
-            color: 'Red',
-            size: 'M',
-            price: 200,
-            quantity: 1,
-            amount: 200
-          }
-        ],
-        mapData: {
-          'AU': 760,
-          'BR': 550,
-          'CA': 120,
-          'DE': 1300,
-          'FR': 540,
-          'GB': 690,
-          'GE': 200,
-          'IN': 200,
-          'RO': 600,
-          'RU': 300,
-          'US': 2920
+
+        data() {
+            return {
+                finances: [
+                    {
+                        effective: '2011/01/01',
+                        salary: '$25.14',
+                        dues: '$15.00',
+                        pac: '$5.00'
+                    },
+                    {
+                        effective: '2011/01/01',
+                        salary: '$25.14',
+                        dues: '$15.00',
+                        pac: '$5.00'
+                    },
+                    {
+                        effective: '2011/01/01',
+                        salary: '$25.14',
+                        dues: '$15.00',
+                        pac: '$5.00'
+                    },
+                    {
+                        effective: '2011/01/01',
+                        salary: '$25.14',
+                        dues: '$15.00',
+                        pac: '$5.00'
+                    },
+                ],
+                history: [
+                    {
+                        facility: 'zid',
+                        region: 'ngl',
+                        unit: '0061',
+                        start: '01/01/2001',
+                        end: '04/12/2012'
+                    },
+                    {
+                        facility: 'zjx',
+                        region: 'nso',
+                        unit: '0061',
+                        start: '04/12/2012',
+                        end: ''
+                    }
+                ],
+                reps: [
+                    {
+                        title: 'President',
+                        name: 'Paul Rinaldi',
+                        email: 'pres@natca.net',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'Executive Vice President',
+                        name: 'Patricia Gilbert',
+                        email: 'evp@gmail.com',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'Regional Vice President',
+                        name: 'Jim Marinitti',
+                        email: 'rvp@gmail.com',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'Regional Vice President - Alternate',
+                        name: 'Jason Arnold',
+                        email: 'arvp@gmail.com',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'Facility President',
+                        name: 'Chris Crappo',
+                        email: 'zjxpres@gmail.com',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'Facility Vice President',
+                        name: 'Andrew Day',
+                        email: 'zjxvp@gmail.com',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'Safety Representative',
+                        name: 'John Doe',
+                        email: 'safety@gmail.com',
+                        phone: '123-456-7890'
+                    },
+                    {
+                        title: 'OSHA Representative',
+                        name: 'Jane Doe',
+                        email: 'osha@gmail.com',
+                        phone: '123-456-7890'
+                    }
+                ]
+            }
         }
-      }
     }
-  }
 </script>
 <style>
 

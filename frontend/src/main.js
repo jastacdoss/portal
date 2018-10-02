@@ -27,3 +27,4 @@ new Vue({
 
 /* We import element-ui variables at the end so they can override the default element-ui colors */
 import './assets/sass/element_variables.scss'
+import './assets/sass/app.scss'

@@ -1,0 +1,25 @@
+.test {
+  background-color: blue;
+}
+
+.card {
+  .card-header {
+    padding-top: 0;
+    color: white;
+    background-color: #212121; // Old browsers
+    background: linear-gradient(90deg, #212121 0%,#474747 49%,#212121 99%);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.panel-header-sm {
+  height: 50px;
+  padding-top: 50px;
+}
+
+.dashboard {
+  thead {
+    font-size: 0.8em;
+  }
+}
