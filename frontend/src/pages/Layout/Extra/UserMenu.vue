@@ -1,7 +1,7 @@
 <template>
   <div class="user">
     <div class="photo">
-      <img src="@/assets/img/james.jpg" alt="avatar"/>
+     <i class="text-success">{{ initials }}</i>
     </div>
     <div class="info">
       <a data-toggle="collapse" :aria-expanded="!isClosed" @click.stop="toggleMenu" href="#">
@@ -62,6 +62,17 @@
       toggleMenu() {
         this.isClosed = !this.isClosed
       }
+    },
+    computed: {
+        initials() {
+            let s = this.title.split(' ');
+            let init = s[0].substring(0,1).toUpperCase();
+
+            if (s.length > 1) {
+                init += s[s.length - 1].substring(0, 1).toUpperCase();
+            }
+            return init;
+        }
     }
   }
 </script>

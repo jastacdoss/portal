@@ -1,7 +1,34 @@
 .test {
-  background-color: blue;
+  background-color: lightgray;
 }
 
+/* ALERTS */
+.alert-container {
+  margin-top: -1.5em;
+  margin-bottom: 1em;
+
+  .alert {
+    margin: 0 0 0.2em 0;
+  }
+}
+
+/* MEMBER DETAIL */
+.member-detail {
+  .list-group-item:first-child {
+    padding-top: 1em;
+  }
+  .list-group-item {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+  }
+}
+
+// Remove border from list-group li's
+.list-group.borderless li {
+  border: 0;
+}
+
+// CUSTOM CARD HEADER BACKGROUND
 .card {
   .card-header {
     padding-top: 0;
@@ -12,14 +39,16 @@
     overflow: hidden;
   }
 }
-
-.panel-header-sm {
-  height: 50px;
-  padding-top: 50px;
-}
-
 .dashboard {
   thead {
     font-size: 0.8em;
   }
+}
+.panel-header-sm {
+  height: 50px;
+  padding-top: 50px;
+}
+/* MISCELLANEOUS MODIFIERS */
+.bg-lightgray {
+  background-color: lightgray;
 }

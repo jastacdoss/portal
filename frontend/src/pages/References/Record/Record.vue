@@ -2,75 +2,78 @@
     <div class="dashboard">
         <div class="row">
             <div class="col">
-                <card class="stacked-form" title="Profile">
-                    <h4 slot="header" class="card-title">
-                        <i class="fas fa-user"></i> Profile
-                    </h4>
-                    <h4 class="mt-0 text-info">Jason Doss</h4>
-
-                    <div class="row">
-                        <div class="col">
-                            <h6 class="card-subtitle mb-2 text-muted">Mailing Address</h6>
-                            <p class="card-text">
-                                123 Aviation Lane<br>
-                                Jacksonville, FL 32046
-                            </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Phone</h6>
-                            <p class="card-text">
-                                <b>c:</b> 123-456-7890<br>
-                                <b>h:</b> 123-456-7890<br>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <div class="row mb-2">
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Facility</h6>
-                                    <p class="card-text">
-                                        ZJX
-                                    </p>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Region</h6>
-                                    <p class="card-text">
-                                        NSO
-                                    </p>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Unit</h6>
-                                    <p class="card-text">
-                                        0061
-                                    </p>
-                                </div>
-                            </div>
+                <card>
+                    <template slot="header">
+                        <h4 class="card-title">Form Elements</h4>
+                    </template>
+                    <div>
+                        <form method="get" action="/" class="form-horizontal">
                             <div class="row">
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Senators</h6>
-                                    <p class="card-text">
-                                        Bill Nelson - D<br>
-                                        Marco Rubio -R<br>
-                                    </p>
-                                    <h6 class="card-subtitle mb-2 text-muted">Representative</h6>
-                                    <p class="card-text">
-                                        Ted Yoho - R
-                                    </p>
+                                <label class="col-sm-2 col-form-label">With help</label>
+                                <div class="col-sm-10">
+                                    <fg-input placeholder="Enter email">
+                  <span slot="helpBlock" class="form-text">A block of help text that breaks onto a new line.
+                  </span>
+                                    </fg-input>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </card>
 
-                <card class="stacked-form" title="Job History">
-                    <h4 slot="header" class="card-title">
-                        <i class="fas fa-history"></i> Job History
-                    </h4>
-                    <el-table class="table-striped" :data="history">
-                        <el-table-column prop="region" label="Region" class-name="text-uppercase"></el-table-column>
-                        <el-table-column prop="facility" label="Facility" class-name="text-uppercase"></el-table-column>
-                        <el-table-column prop="unit" label="Unit"></el-table-column>
-                        <el-table-column prop="start" label="Start"></el-table-column>
-                        <el-table-column prop="end" label="End"></el-table-column>
-                    </el-table>
-                </card>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <fg-input type="password" value="password">
+                                    </fg-input>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Placeholder</label>
+                                <div class="col-sm-10">
+                                    <fg-input placeholder="Placeholder">
+                                    </fg-input>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Disabled</label>
+                                <div class="col-sm-10">
+                                    <fg-input value="Disabled input here.." disabled>
+                                    </fg-input>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Static Control</label>
+                                <div class="col-sm-10">
+                                    <fg-input>
+                                        <p class="form-control-static">hello@creative-tim.com</p>
+                                    </fg-input>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Checkboxes and radios</label>
+                                <div class="col-sm-10 checkbox-radios">
+                                    <checkbox v-model="checkboxes.first">First checkbox</checkbox>
+                                    <checkbox v-model="checkboxes.second">Second checkbox</checkbox>
+
+                                    <radio label="1" v-model="radios.radio1">First Radio</radio>
+                                    <radio label="2" v-model="radios.radio1">Second Radio</radio>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Inline checkboxes</label>
+                                <div class="col-sm-10 checkbox-radios">
+                                    <checkbox v-model="checkboxes.a" inline>a</checkbox>
+                                    <checkbox v-model="checkboxes.b" inline>b</checkbox>
+                                    <checkbox v-model="checkboxes.c" inline>c</checkbox>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </card>  <!-- end card -->
             </div>
             <div class="col">
                 <card class="stacked-form" title="Facility Info">

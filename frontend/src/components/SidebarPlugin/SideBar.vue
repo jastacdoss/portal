@@ -3,14 +3,14 @@
        :data-color="backgroundColor">
 
     <div class="logo">
-      <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+      <a href="http://portal.neastrong.com" class="simple-text logo-mini">
         <div class="logo-image">
           <img :src="logo">
         </div>
       </a>
 
-      <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-        {{title}}
+      <a href="http://portal.neastrong.com" class="simple-text logo-normal">
+        {{ title }}
       </a>
       <div class="navbar-minimize">
         <button id="minimizeSidebar" class="btn btn-simple btn-icon btn-neutral btn-round" @click="minimizeSidebar">
@@ -56,7 +56,7 @@
       },
       logo: {
         type: String,
-        default: require('@/assets/img/icon-vue.png')
+        default: require('@/assets/img/natca-ico.png')
       },
       sidebarLinks: {
         type: Array,

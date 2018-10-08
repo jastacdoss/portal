@@ -2,6 +2,8 @@ import Checkbox from './Inputs/Checkbox.vue'
 import IconCheckbox from './Inputs/IconCheckbox.vue'
 import Radio from './Inputs/Radio.vue'
 import FormGroupInput from './Inputs/formGroupInput.vue'
+import CeInput from './Inputs/CeInput.vue'
+
 import Switch from './Switch.vue'
 import Badge from './Badge'
 import Progress from './Progress.vue'
@@ -40,6 +42,7 @@ import SidebarPlugin from './SidebarPlugin'
 
 import AnimatedNumber from './AnimatedNumber'
 
+
 export {
   Checkbox,
   IconCheckbox,
@@ -49,6 +52,7 @@ export {
   Pagination,
   Radio,
   FormGroupInput,
+    CeInput,
   Card,
   StatsCard,
   LineChart,
@@ -74,5 +78,5 @@ export {
   Collapse,
   CollapseItem,
   LoadingPanel,
-  AsyncWorldMap
+  AsyncWorldMap,
 }
