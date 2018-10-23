@@ -413,7 +413,7 @@
                                 </div>
                                 <div class="col">
                                     <h6 class="card-subtitle text-muted">
-                                        PAC
+                                        Academy
                                     </h6>
                                     <strong>$652.39</strong>
                                 </div>
@@ -475,7 +475,7 @@
                                             <ce-input name="Date" value="09/11/2018"></ce-input>
                                         </div>
                                         <div class="col-sm-3">
-                                            <ce-input name="Type" value="PAC"></ce-input>
+                                            <ce-input name="Type" value="Academy"></ce-input>
                                         </div>
                                         <div class="col-sm-3">
                                             <ce-input prefix="$" name="Amount" value="35.00"></ce-input>
@@ -517,7 +517,7 @@
                                             <ce-input name="Date" value="09/11/2018"></ce-input>
                                         </div>
                                         <div class="col-sm-3">
-                                            <ce-input name="Type" value="PAC"></ce-input>
+                                            <ce-input name="Type" value="Academy"></ce-input>
                                         </div>
                                         <div class="col-sm-3">
                                             <ce-input prefix="$" name="Amount" value="35.00"></ce-input>

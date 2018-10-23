@@ -32,7 +32,7 @@
 
 // CUSTOM CARD HEADER BACKGROUND
 .card {
-  .card-header {
+  > .card-header {
     padding-top: 0;
     color: white;
     background-color: #212121; // Old browsers

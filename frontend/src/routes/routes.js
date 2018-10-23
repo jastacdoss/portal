@@ -3,12 +3,17 @@ import AuthLayout from 'src/pages/Pages/AuthLayout.vue'
 // DASHBOARD
 import DashboardHeader from 'src/pages/Dashboard/DashboardHeader.vue'
 import DashboardLayout from 'src/pages/Layout/DashboardLayout.vue'
+import MemberLayout from 'src/pages/Layout/MemberLayout.vue'
 import Dashboard from 'src/pages/Dashboard/Dashboard.vue'
 
 // MEMBER DETAIL
 import MemberDetail from 'src/pages/MemberDetail/MemberDetail.vue'
 import Grievances from 'src/pages/Grievances/Grievances.vue'
 import Listserv from 'src/pages/Listserv/Listserv.vue'
+import Pac from 'src/pages/Pac/Pac.vue'
+import Academy from 'src/pages/Academy/Academy.vue'
+import Registrations from 'src/pages/Registrations/Registrations.vue'
+import Resources from 'src/pages/Resources/Resources.vue'
 
 // NOT FOUND
 import NotFound from 'src/pages/GeneralViews/NotFoundPage.vue'
@@ -22,7 +27,7 @@ const routes = [
     },
     {
         path: '/',
-        component: DashboardLayout,
+        component: MemberLayout,
         redirect: '/dashboard',
         name: 'Dashboard',
         children: [
@@ -46,6 +51,26 @@ const routes = [
                 name: 'Listserv',
                 components: {default: Listserv, header: DashboardHeader}
             },
+            {
+                path: 'pac',
+                name: 'PAC',
+                components: {default: Pac, header: DashboardHeader}
+            },
+            {
+                path: 'academy',
+                name: 'Academy',
+                components: {default: Academy, header: DashboardHeader}
+            },
+            {
+                path: 'registrations',
+                name: 'Registrations',
+                components: {default: Registrations, header: DashboardHeader}
+            },
+            {
+                path: 'resources',
+                name: 'Resources',
+                components: {default: Resources, header: DashboardHeader}
+            }
             // {
             //     path: 'charts',
             //     name: 'Charts',
