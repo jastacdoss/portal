@@ -78,6 +78,13 @@ table {
     color: $white-color;
   }
 }
+/* EL-TABLE MODS */
+.table > thead > tr > th, .el-table table > thead > tr > th {
+  font-size: 1em;
+  padding: 0.2em;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* ADD DETAILS */
 .add-details {
