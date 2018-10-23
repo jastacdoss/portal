@@ -1,3 +1,5 @@
+@import 'now-ui-dashboard/variables';
+
 .test {
   background-color: lightgray;
 }
@@ -39,16 +41,65 @@
     overflow: hidden;
   }
 }
-.dashboard {
-  thead {
-    font-size: 0.8em;
-  }
-}
 .panel-header-sm {
   height: 50px;
   padding-top: 50px;
 }
+
+/* RESULTS */
+.results {
+  .head {
+    background-color: $social-instagram;
+    color: $white-color;
+  }
+  .subhead {
+    background-color: $social-instagram-state-color;
+    color: $white-color;
+  }
+  .deleted {
+    background-color: $opacity-gray-3;
+    color: $dark-gray;
+  }
+}
+
+
+/** LINE GROUPS */
+table {
+  border-collapse: collapse;
+  border: solid 1px $light-gray;
+
+  td {
+    border: solid 1px $light-gray;
+    padding: 0.1em 0.3em;
+  }
+
+  thead {
+    background-color: $social-instagram;
+    color: $white-color;
+  }
+}
+
+/* ADD DETAILS */
+.add-details {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 20px;
+  background-color: $success-color;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  text-align: center;
+  &:hover {
+    background-color: $success-color-opacity;
+  }
+}
+
 /* MISCELLANEOUS MODIFIERS */
 .bg-lightgray {
   background-color: lightgray;
+}
+.cursor-pointer {
+  cursor: pointer;
 }

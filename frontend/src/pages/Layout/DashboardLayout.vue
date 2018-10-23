@@ -12,9 +12,9 @@
                 <sidebar-item
                         :link="{name: 'Teams', icon: 'fas fa-users', path: '/table-list/regular'}"></sidebar-item>
                 <sidebar-item
-                        :link="{name: 'Grievances', icon: 'fas fa-paperclip', path: '/table-list/regular'}"></sidebar-item>
+                        :link="{name: 'Grievances', icon: 'fas fa-paperclip', path: '/grievances'}"></sidebar-item>
                 <sidebar-item
-                        :link="{name: 'Email Lists', icon: 'fas fa-mail-bulk', path: '/table-list/regular'}"></sidebar-item>
+                        :link="{name: 'Email Lists', icon: 'fas fa-mail-bulk', path: '/listserv'}"></sidebar-item>
                 <sidebar-item
                         :link="{name: 'PAC', icon: 'fas fa-dollar-sign', path: '/table-list/regular'}"></sidebar-item>
                 <sidebar-item

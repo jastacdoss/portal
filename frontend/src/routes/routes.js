@@ -7,6 +7,8 @@ import Dashboard from 'src/pages/Dashboard/Dashboard.vue'
 
 // MEMBER DETAIL
 import MemberDetail from 'src/pages/MemberDetail/MemberDetail.vue'
+import Grievances from 'src/pages/Grievances/Grievances.vue'
+import Listserv from 'src/pages/Listserv/Listserv.vue'
 
 // NOT FOUND
 import NotFound from 'src/pages/GeneralViews/NotFoundPage.vue'
@@ -33,6 +35,16 @@ const routes = [
                 path: 'memberdetail',
                 name: 'Member Detail',
                 components: {default: MemberDetail, header: DashboardHeader}
+            },
+            {
+                path: 'grievances',
+                name: 'Grievances',
+                components: {default: Grievances, header: DashboardHeader}
+            },
+            {
+                path: 'listserv',
+                name: 'Listserv',
+                components: {default: Listserv, header: DashboardHeader}
             },
             // {
             //     path: 'charts',
