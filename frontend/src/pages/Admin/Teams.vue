@@ -10,7 +10,6 @@
                         <thead>
                         <tr>
                             <td width="80%">List Name</td>
-                            <td>Status</td>
                         </tr>
                         </thead>
                         <tbody>
@@ -21,51 +20,14 @@
                                 </td>
                             </tr>
                             <tr v-for="l in t.lists">
-                                <td>{{l.name}}</td>
-                                <td class="text-center">
-                                    <el-switch
-                                            v-model="l.subscribed"
-                                            active-color="#13ce66"
-                                            inactive-color="#ff4949"
-                                            :active-value="1"
-                                            :inactive-value="0">
-                                    </el-switch>
+                                <td>
+                                    <router-link :to="'/admin/teams/' + l.listid" class="text-dark">{{l.name}}</router-link>
                                 </td>
                             </tr>
                         </template>
                         </tbody>
                     </table>
-                </card><!-- TEAM LISTS -->
-            </div>
-            <div class="col">
-                <card>
-                    <template slot="header">
-                        <h4 class="card-title"><i class="fas fa-mail-bulk"></i> Available Lists</h4>
-                    </template>
-
-                    <table class="w-100 results">
-                        <thead>
-                        <tr>
-                            <td width="80%">List Name</td>
-                            <td>Status</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr v-for="c in lists">
-                            <td>{{c.name}}</td>
-                            <td class="text-center">
-                                <el-switch
-                                        v-model="c.subscribed"
-                                        active-color="#13ce66"
-                                        inactive-color="#ff4949"
-                                        :active-value="1"
-                                        :inactive-value="0">
-                                </el-switch>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </card><!-- AVAILABLE LISTS -->
+                </card>
             </div>
         </div>
     </div>
@@ -94,14 +56,32 @@
                 ],
                 teams: [
                     {
+                        id: 0,
+                        name: 'Global',
+                        lists: [
+                            {
+                                listid: 0,
+                                name: 'NATCA Charitable Foundation',
+                                subscribed: 0
+                            },
+                            {
+                                listid: 1,
+                                name: 'National Update',
+                                subscribed: 1
+                            },
+                        ]
+                    },
+                    {
                         id: 1,
                         name: 'Internet Technology Committee',
                         lists: [
                             {
+                                listid: 2,
                                 name: 'Committee Members',
                                 subscribed: 1
                             },
                             {
+                                listid: 3,
                                 name: 'Website Workgroup',
                                 subscribed: 0
                             }
@@ -111,10 +91,12 @@
                         name: 'Jacksonville Center',
                         lists: [
                             {
+                                listid: 4,
                                 name: 'Members',
                                 subscribed: 1
                             },
                             {
+                                listid: 5,
                                 name: 'Executive Board',
                                 subscribed: 1
                             }
@@ -125,23 +107,13 @@
                         name: 'National',
                         lists: [
                             {
+                                listid: 6,
                                 name: 'Members',
                                 subscribed: 1
                             }
                         ],
-                    }
-
+                    },
                 ],
-                lists: [
-                    {
-                        name: 'NATCA Charitable Foundation',
-                        subscribed: 0
-                    },
-                    {
-                        name: 'National Update',
-                        subscribed: 1
-                    },
-                ]
             }
         },
         methods: {

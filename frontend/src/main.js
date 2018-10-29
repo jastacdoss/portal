@@ -8,6 +8,11 @@ import App from './App.vue'
 // router setup
 import routes from './routes/routes'
 
+/**
+ * Use lodash
+ */
+window._ = require('lodash');
+
 // plugin setup
 Vue.use(VueRouter)
 Vue.use(DashboardPlugin)

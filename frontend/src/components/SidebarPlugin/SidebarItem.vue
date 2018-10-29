@@ -2,7 +2,8 @@
   <component :is="baseComponent"
              :to="link.path ? link.path : '/'"
              :class="{active : isActive}"
-             tag="li">
+             tag="li"
+             :exact="link.exact">
     <a v-if="isMenu"
        href="#"
        class="nav-link sidebar-menu-item"

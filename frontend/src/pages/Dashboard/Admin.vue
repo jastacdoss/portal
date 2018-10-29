@@ -23,69 +23,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
-                <card class="stacked-form" title="Profile">
-                    <h4 slot="header" class="card-title">
-                        <i class="fas fa-user"></i> Profile
-                    </h4>
-                    <h4 class="mt-0 text-info">Jason Doss</h4>
-
-                    <div class="row">
-                        <div class="col">
-                            <h6 class="card-subtitle mb-2 text-muted">Member Number</h6>
-                            <p class="card-text">
-                                40162
-
-                            <h6 class="card-subtitle mb-2 text-muted">Mailing Address</h6>
-                            <p class="card-text">
-                                12345 Aviation Lane<br>
-                                Jacksonville, FL 32046
-                            </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Phone</h6>
-                            <p class="card-text">
-                                <b>c:</b> 123-456-7890<br>
-                                <b>h:</b> 123-456-7890<br>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <div class="row mb-2">
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Facility</h6>
-                                    <p class="card-text">
-                                        ZJX
-                                    </p>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Region</h6>
-                                    <p class="card-text">
-                                        NSO
-                                    </p>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Unit</h6>
-                                    <p class="card-text">
-                                        0061
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">Senators</h6>
-                                    <p class="card-text">
-                                        Bill Nelson - D<br>
-                                        Marco Rubio -R<br>
-                                    </p>
-                                    <h6 class="card-subtitle mb-2 text-muted">Representative</h6>
-                                    <p class="card-text">
-                                        Ted Yoho - R
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </card>
-            </div>
-            <div class="col-sm-6">
+            <div class="col">
                 <card class="stacked-form" title="Facility Info">
                     <h4 slot="header" class="card-title">
                         <i class="far fa-building"></i> Facility Info
@@ -119,21 +57,6 @@
                             </p>
                         </div>
                     </div>
-                </card>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <card class="stacked-form" title="Representatives">
-                    <h4 slot="header" class="card-title">
-                        <i class="fas fa-users"></i> Representatives
-                    </h4>
-                    <el-table class="table-striped" :data="reps">
-                        <el-table-column prop="title" label="Title"></el-table-column>
-                        <el-table-column prop="name" label="Name"></el-table-column>
-                        <el-table-column prop="email" label="Email"></el-table-column>
-                        <el-table-column prop="phone" label="Phone"></el-table-column>
-                    </el-table>
                 </card>
             </div>
         </div>

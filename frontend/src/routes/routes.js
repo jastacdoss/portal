@@ -3,17 +3,25 @@ import AuthLayout from 'src/pages/Pages/AuthLayout.vue'
 // DASHBOARD
 import DashboardHeader from 'src/pages/Dashboard/DashboardHeader.vue'
 import DashboardLayout from 'src/pages/Layout/DashboardLayout.vue'
-import MemberLayout from 'src/pages/Layout/MemberLayout.vue'
 import Dashboard from 'src/pages/Dashboard/Dashboard.vue'
+import DashboardAdmin from 'src/pages/Dashboard/Admin.vue'
+import AdminLayout from 'src/pages/Layout/AdminLayout.vue'
+import MemberLayout from 'src/pages/Layout/MemberLayout.vue'
 
 // MEMBER DETAIL
 import MemberDetail from 'src/pages/MemberDetail/MemberDetail.vue'
-import Grievances from 'src/pages/Grievances/Grievances.vue'
-import Listserv from 'src/pages/Listserv/Listserv.vue'
-import Pac from 'src/pages/Pac/Pac.vue'
-import Academy from 'src/pages/Academy/Academy.vue'
-import Registrations from 'src/pages/Registrations/Registrations.vue'
-import Resources from 'src/pages/Resources/Resources.vue'
+import Grievances from 'src/pages/MemberDetail/Grievances.vue'
+import Listserv from 'src/pages/MemberDetail/Listserv.vue'
+import Pac from 'src/pages/MemberDetail/Pac.vue'
+import Academy from 'src/pages/MemberDetail/Academy.vue'
+import Registrations from 'src/pages/MemberDetail/Registrations.vue'
+import Resources from 'src/pages/MemberDetail/Resources.vue'
+import Seniority from 'src/pages/MemberDetail/Seniority.vue'
+
+// ADMIN
+import Teams from 'src/pages/Admin/Teams.vue'
+import Team from 'src/pages/Admin/Team.vue'
+import Officers from 'src/pages/Admin/Officers.vue'
 
 // NOT FOUND
 import NotFound from 'src/pages/GeneralViews/NotFoundPage.vue'
@@ -24,6 +32,33 @@ const routes = [
         path: '/',
         redirect: '/dashboard',
         name: 'Home'
+    },
+    {
+        path: '/admin',
+        component: AdminLayout,
+        name: 'admin',
+        children: [
+            {
+                path: '',
+                name: 'Admin Dashboard',
+                components: {default: DashboardAdmin, header: DashboardHeader}
+            },
+            {
+                path: 'teams',
+                name: 'Teams',
+                components: {default: Teams, header: DashboardHeader}
+            },
+            {
+                path: 'teams/:team',
+                name: 'Team',
+                components: {default: Team, header: DashboardHeader}
+            },
+            {
+                path: 'officers',
+                name: 'Officers',
+                components: {default: Officers, header: DashboardHeader}
+            }
+        ]
     },
     {
         path: '/',
@@ -70,17 +105,12 @@ const routes = [
                 path: 'resources',
                 name: 'Resources',
                 components: {default: Resources, header: DashboardHeader}
+            },
+            {
+                path: 'seniority',
+                name: 'Seniority',
+                components: {default: Seniority, header: DashboardHeader}
             }
-            // {
-            //     path: 'charts',
-            //     name: 'Charts',
-            //     components: {default: Charts, header: DefaultHeader}
-            // },
-            // {
-            //     path: 'widgets',
-            //     name: 'Widgets',
-            //     components: {default: Widgets, header: DefaultHeader}
-            // }
         ]
     },
     {path: '*', component: NotFound}

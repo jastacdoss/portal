@@ -35,21 +35,19 @@
             </p>
           </a>
         </li>
-        <drop-down tag="li"
-                   position="right"
-                   class="nav-item"
-                   icon="now-ui-icons location_world">
-
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </drop-down>
-
         <li class="nav-item">
-          <a class="nav-link" href="#pablo">
+          <a class="nav-link" href="#/dashboard">
+            <i class="now-ui-icons location_world"></i>
+            <p>
+              <span class="d-lg-none d-md-block">DASHBOARD</span>
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/admin">
             <i class="now-ui-icons users_single-02"></i>
             <p>
-              <span class="d-lg-none d-md-block">Account</span>
+              <span class="d-lg-none d-md-block">ADMIN</span>
             </p>
           </a>
         </li>
