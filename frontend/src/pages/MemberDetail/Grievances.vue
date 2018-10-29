@@ -92,7 +92,7 @@
     </div>
 </template>
 <script>
-    import {Badge, Checkbox, Radio, CeInput} from 'src/components/index';
+    import {Badge, Checkbox, Radio, CeInput} from 'src/components';
     import {Dialog} from 'element-ui';
 
     export default {

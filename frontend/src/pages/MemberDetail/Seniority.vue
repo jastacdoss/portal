@@ -188,15 +188,41 @@
                             </div>
                         </li>
                     </ul>
-                    <span class="add-details mb-3" @click="addLineDetail()"><i class="fas fa-plus"></i></span>
+                    <span class="add-details mb-3" @click="showJobForm = true"><i class="fas fa-plus"></i></span>
                 </card><!-- JOB HISTORY -->
             </div>
         </div>
+        <el-dialog
+                title="New Job Entry"
+                :visible.sync="showJobForm"
+                width="80%" custom-class="p-0">
+            <div class="">
+                <fg-input label="Facility"></fg-input>
+                <fg-input label="Region"></fg-input>
+                <fg-input label="Org Code"></fg-input>
+                <fg-input label="Unit"></fg-input>
+                <div class="row">
+                    <div class="col">
+                        <fg-input label="Start"></fg-input>
+                    </div>
+                    <div class="col">
+                        <fg-input label="End"></fg-input>
+                    </div>
+                </div>
+                <checkbox v-model="item.DodTime" inline>DOD/FCT Time</checkbox>
+                <div class="row">
+                    <div class="col text-center">
+                        <n-button type="primary" round="" >Save</n-button>
+                        <n-button type="default" round="" class="mr-1">Cancel</n-button>
+                    </div>
+                </div>
+            </div>
+        </el-dialog>
     </div>
 </template>
 <script>
-    import {Badge, Checkbox, Radio, CeInput} from 'src/components/index';
-    import {Table, TableColumn, Popover} from 'element-ui';
+    import {Badge, Checkbox, Radio, CeInput, Button} from 'src/components';
+    import {Table, TableColumn, Popover, Dialog} from 'element-ui';
 
     export default {
         components: {
@@ -204,8 +230,10 @@
             Radio,
             Badge,
             CeInput,
+            Button,
             [Table.name]: Table,
             [TableColumn.name]: TableColumn,
+            [Dialog.name]: Dialog,
             Popover
         },
 
@@ -240,6 +268,7 @@
                     radioOn: '2',
                     radioOff: '2'
                 },
+                showJobForm: false,
                 checkboxes: {
                     first: false,
                     second: false,
