@@ -6,9 +6,9 @@
                     <template slot="header">
                         <h4 class="card-title"><i class="fas fa-paperclip"></i> Active Grievances</h4>
                     </template>
-                    <table class="w-100">
+                    <table class="w-100 results">
                         <thead>
-                        <tr>
+                        <tr  class="head">
                             <td width="50%">Grievance</td>
                             <td>Violation Date</td>
                             <td>Status</td>
@@ -31,14 +31,16 @@
                     <span class="add-details mb-2" @click="addLine(grievances)"><i class="fas fa-plus"></i></span>
                 </card><!-- ACTIVE -->
             </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <card>
                     <template slot="header">
                         <h4 class="card-title"><i class="fas fa-history"></i> Archive</h4>
                     </template>
-                    <table class="w-100">
+                    <table class="w-100 results">
                         <thead>
-                        <tr>
+                        <tr class="head">
                             <td width="75%">Grievance</td>
                             <td>Closed Date</td>
                         </tr>

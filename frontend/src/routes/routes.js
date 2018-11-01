@@ -87,6 +87,16 @@ const routes = [
                 components: {default: Listserv, header: DashboardHeader}
             },
             {
+                path: 'teams',
+                name: 'Teams',
+                components: {default: Teams, header: DashboardHeader}
+            },
+            {
+                path: 'teams/:team',
+                name: 'Team',
+                components: {default: Team, header: DashboardHeader}
+            },
+            {
                 path: 'pac',
                 name: 'PAC',
                 components: {default: Pac, header: DashboardHeader}

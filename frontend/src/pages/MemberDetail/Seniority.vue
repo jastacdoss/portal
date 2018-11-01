@@ -97,97 +97,30 @@
                     <template slot="header">
                         <h4 class="card-title"><i class="fas fa-history"></i> Job History</h4>
                     </template>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-primary">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <h6 class="card-subtitle text-muted">
-                                        Facility
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Region
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Org Code
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Unit
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Start
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        End
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Area
-                                    </h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="ZJX"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="NSO"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="SOCC02C"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="ATC-0061"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="04/12/2012"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value=""></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="South"></ce-input>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="ZID"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="NGL"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="SOCC02C"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="ATC-0061"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="01/08/2005"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="04/12/2012"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="6"></ce-input>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <table class="w-100">
+                        <thead>
+                        <tr>
+                            <td >Facility</td>
+                            <td>Region</td>
+                            <td>ORG Code</td>
+                            <td>Unit</td>
+                            <td>Start</td>
+                            <td>End</td>
+                            <td>Area</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="j in jobs">
+                            <td>{{j.facility}}</td>
+                            <td>{{j.region}}</td>
+                            <td>{{j.org}}</td>
+                            <td>{{j.unit}}</td>
+                            <td>{{j.start}}</td>
+                            <td>{{j.end}}</td>
+                            <td>{{j.area}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
                     <span class="add-details mb-3" @click="showJobForm = true"><i class="fas fa-plus"></i></span>
                 </card><!-- JOB HISTORY -->
             </div>
@@ -260,26 +193,26 @@
                         }
                     ]
                 },
-                editing: '',
-                radios: {
-                    radio1: '1',
-                    radio2: '2',
-                    radio3: '2',
-                    radioOn: '2',
-                    radioOff: '2'
-                },
-                showJobForm: false,
-                checkboxes: {
-                    first: false,
-                    second: false,
-                    a: false,
-                    b: false,
-                    c: false,
-                    unchecked: false,
-                    checked: true,
-                    disabledUnchecked: false,
-                    disabledChecked: true
-                },
+                jobs: [
+                    {
+                        facility: 'ZJX',
+                        region: 'NSO',
+                        org: 'SOCC02C',
+                        unit: 'ATC-0061',
+                        start: '04/12/2012',
+                        end: '',
+                        area: 'South'
+                    },
+                    {
+                        facility: 'ZID',
+                        region: 'NGL',
+                        org: 'SOCC02C',
+                        unit: 'ATC-0061',
+                        start: '01/08/2005',
+                        end: '04/12/2012',
+                        area: '6'
+                    }
+                ],
                 finances: [
                     {
                         effective: '2011/01/01',

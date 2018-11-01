@@ -196,197 +196,28 @@
             <div class="col">
                 <card card-body-classes="p-0">
                     <template slot="header">
-                        <h4 class="card-title"><i class="fas fa-history"></i> Job History</h4>
-                    </template>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-primary">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <h6 class="card-subtitle text-muted">
-                                        Facility
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Region
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Org Code
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Unit
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Start
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        End
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                        Area
-                                    </h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="ZJX"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="NSO"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="SOCC02C"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="ATC-0061"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="04/12/2012"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value=""></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="South"></ce-input>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="ZID"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="NGL"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="SOCC02C"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="ATC-0061"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="01/08/2005"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="04/12/2012"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="6"></ce-input>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </card><!-- JOB HISTORY -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <card card-body-classes="p-0">
-                    <template slot="header">
                         <h4 class="card-title"><i class="fas fa-user-clock"></i> NATCA Positions</h4>
                     </template>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-primary">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <h6 class="card-subtitle text-muted">
-                                        Name
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle text-muted">
-                                        Level
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle text-muted">
-                                        Start
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <h6 class="card-subtitle text-muted">
-                                        End
-                                    </h6>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h6 class="card-subtitle text-muted">
-                                        Notes
-                                    </h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="IT Committee"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="Member"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="10/06/2015"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value=""></ce-input>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ce-input value=""></ce-input>
-                                </div>
-
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="Pay Committee"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="Member"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="08/31/2018"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value=""></ce-input>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ce-input value=""></ce-input>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col">
-                                    <ce-input value="Vice-President"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="ZJX"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="08/31/2014"></ce-input>
-                                </div>
-                                <div class="col">
-                                    <ce-input value="08/31/2015"></ce-input>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ce-input value=""></ce-input>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <table class="w-100 results">
+                        <thead>
+                        <tr class="head ">
+                            <td>Name</td>
+                            <td>Level</td>
+                            <td>Start</td>
+                            <td>End</td>
+                            <td width="30%">Notes</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="p in positions">
+                            <td>{{p.name}}</td>
+                            <td>{{p.level}}</td>
+                            <td>{{p.start}}</td>
+                            <td>{{p.end}}</td>
+                            <td>{{p.notes}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </card><!-- NATCA POSITIONS -->
             </div>
         </div>
@@ -425,119 +256,28 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-primary">
-                            <div class="row text-center pt-2">
-                                <div class="col-sm-3">
-                                    <h6 class="card-subtitle text-muted">
-                                        Pay Period
-                                    </h6>
-                                </div>
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h6 class="card-subtitle text-muted">
-                                                Date
-                                            </h6>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h6 class="card-subtitle text-muted">
-                                                Type
-                                            </h6>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h6 class="card-subtitle text-muted">
-                                                Amount
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col-sm-3">
-                                    19
-                                </div>
-                                <div class="col">
-                                    <div class="row text-center">
-                                        <div class="col-sm-3">
-                                            <ce-input name="Date" value="09/11/2018"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input name="Type" value="Dues"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input prefix="$" name="Amount" value="74.49"></ce-input>
-                                        </div>
-                                    </div>
-                                    <div class="row text-center">
-                                        <div class="col-sm-3">
-                                            <ce-input name="Date" value="09/11/2018"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input name="Type" value="Academy"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input prefix="$" name="Amount" value="35.00"></ce-input>
-                                        </div>
-                                    </div>
-                                    <div class="row text-center">
-                                        <div class="col-sm-3">
-                                            <ce-input name="Date" value="09/11/2018"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input name="Type" value="Disaster Relief"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input prefix="$" name="Amount" value="50.00"></ce-input>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col-sm-3">
-                                    18
-                                </div>
-                                <div class="col">
-                                    <div class="row text-center">
-                                        <div class="col-sm-3">
-                                            <ce-input name="Date" value="09/11/2018"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input name="Type" value="Dues"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input prefix="$" name="Amount" value="74.49"></ce-input>
-                                        </div>
-                                    </div>
-                                    <div class="row text-center">
-                                        <div class="col-sm-3">
-                                            <ce-input name="Date" value="09/11/2018"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input name="Type" value="Academy"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input prefix="$" name="Amount" value="35.00"></ce-input>
-                                        </div>
-                                    </div>
-                                    <div class="row text-center">
-                                        <div class="col-sm-3">
-                                            <ce-input name="Date" value="09/11/2018"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input name="Type" value="Disaster Relief"></ce-input>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <ce-input prefix="$" name="Amount" value="50.00"></ce-input>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
+                    <table class="w-100 results">
+                        <thead>
+                        <tr class="head">
+                            <td>Pay Period</td>
+                            <td>Date</td>
+                            <td>Type</td>
+                            <td>Amount</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <template v-for="p in periods">
+                            <td rowspan="4">{{p.pp}}</td>
+
+                            <tr v-for="l in p.lines">
+                                <td>{{l.date}}</td>
+                                <td>{{l.type}}</td>
+                                <td>{{l.amount}}</td>
+                            </tr>
+                        </template>
+                        </tbody>
+                    </table>
                 </card><!-- FINANCES -->
             </div>
         </div>
@@ -547,81 +287,30 @@
                     <h4 slot="header" class="card-title">
                         <i class="fas fa-mail-bulk"></i> Communications
                     </h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-info">
-                            <div class="row text-center">
-                                <div class="col-sm-2">
-                                    <h6 class="card-subtitle text-muted">
-                                        Type
-                                    </h6>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h6 class="card-subtitle text-muted">
-                                        Subject
-                                    </h6>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h6 class="card-subtitle text-muted">
-                                        Sent
-                                    </h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col-sm-2">
-                                    <ce-input name="Type" value="Email"></ce-input>
-                                </div>
-                                <div class="col-sm-5">
-                                    <ce-input name="Subject" value="ATS Field Realignment"></ce-input>
-                                    <el-popover class="ml-2" title="ATS Field Realignment"
-                                                trigger="hover">
-                                        Brothers and Sisters,
-
-                                        Attached to this message, you will find the Memorandum of Understanding (MOU) between NATCA and the Agency regarding the implementation of the Agency’s Air Traffic Services Field Realignment (ATS Field Realignment or GM Realignment).
-
-                                        The MOU covers the Air Traffic Control (ATC), Traffic Management Unit (TMU), NOTAM, FSS, and Staff Support Specialist (SSS) bargaining units. We ask that you thoroughly review the MOU, so you are familiar with the relevant provisions of the agreement before the Agency’s implementation of the ATS Field Realignment presently scheduled for October 14, 2018.
-
-                                        The implementation of the ATS Field Realignment will have virtually no direct affect on members of the ATC/NOTAM and FSS bargaining units. For members working in ATC facilities that are part of the SSS and TMU bargaining units, the ATS Field Realignment will likely represent a change from current practices and may result in the identification of issues that were not initially contemplated. Both NATCA and the Agency have committed to addressing identified problems and concerns in a timely manner.
-
-                                        We have included a summary of the more relevant provisions of the MOU below:
-
-                                        • No change to the normal points of contact (e.g., communication, bargaining, and collaboration) between the Agency and Union for NATCA Representatives at the facility level.
-                                        • Clarifies the procedures for the submittal and approval of leave for SSS.
-                                        • Provides clarification and protection for SSS work assignments.
-                                        • Ensures BUEs will not have their facility of record changed as a result of the Air Traffic Services Field Realignment and will continue to receive Controller Incentive Pay (CIP) and all other premiums, differentials, and allowances associated with their facility of record.
-                                        • Addresses SSS performance ratings, feedback sessions, and Article 8/Article 9 meetings and the manner in which they may be conducted.
-                                        • Expands “other facility duties” to include duties within a BUE’s District when such duties are assigned in accordance with Article 45 for the ATC and TMU bargaining units.
-                                        • Ensures SSS can continue to maintain operational currency.
-
-                                        We understand the uncertainty associated with this change and have included as many protections as possible in the MOU. To assist us in addressing problems or issues arising from the implementation of the ATS Field Realignment, we are asking that you forward identified issues/ problems to your RVP.
-
-                                        Additionally, to help members better understand the MOU, we have established an email address at gm-questions@natcadc.org for questions regarding the MOU or implementation of the ATS Field Realignment.
-
-
+                    <table class="w-100 results">
+                        <thead>
+                        <tr  class="head">
+                            <td>Type</td>
+                            <td>Subject</td>
+                            <td>Sent</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="c in coms">
+                                <td>{{c.type}}</td>
+                                <td>
+                                    {{c.subject}}
+                                    <el-popover class="ml-2"
+                                                title="ATS Field Realignment"
+                                                trigger="hover" v-if="c.description">
+                                        {{c.description}}
                                         <i class="fas fa-info-circle" slot="reference"></i>
                                     </el-popover>
-                                </div>
-                                <div class="col-sm-5">
-                                    <ce-input name="Sent" value="09/24/2018 14:22:08"> </ce-input>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col-sm-2">
-                                    <ce-input name="Type" value="Email"></ce-input>
-                                </div>
-                                <div class="col-sm-5">
-                                    <ce-input name="Subject" value="Request Volunteer: National Validation Team"></ce-input>
-
-                                </div>
-                                <div class="col-sm-5">
-                                    <ce-input name="Sent" value="09/22/2018 12:18:12"> </ce-input>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                                </td>
+                                <td>{{c.sent}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </card> <!-- COMMUNCATIONS -->
             </div>
             <div class="col">
@@ -629,53 +318,22 @@
                     <h4 slot="header" class="card-title">
                         <i class="fas fa-file-alt"></i> Documents
                     </h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-info">
-                            <div class="row text-center">
-                                <div class="col-sm-4">
-                                    <h6 class="card-subtitle text-muted">
-                                        Description
-                                    </h6>
-                                </div>
-                                <div class="col-sm-5">
-                                    <h6 class="card-subtitle text-muted">
-                                        Filename
-                                    </h6>
-                                </div>
-                                <div class="col-sm-3">
-                                    <h6 class="card-subtitle text-muted">
-                                        Uploaded
-                                    </h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col-sm-4">
-                                    <ce-input name="Description" value="Membership Application"></ce-input>
-                                </div>
-                                <div class="col-sm-5">
-                                    <small><ce-input name="Filename" value="080412-doss-jason-member-app"></ce-input></small>
-                                </div>
-                                <div class="col-sm-3">
-                                    <ce-input name="Uplaoded" value="04/12/2018"> </ce-input>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row text-center">
-                                <div class="col-sm-4">
-                                    <ce-input name="Description" value="PAC Form"></ce-input>
-                                </div>
-                                <div class="col-sm-5">
-                                    <small><ce-input name="Filename" value="090622-doss-jason-pac-form"></ce-input></small>
-                                </div>
-                                <div class="col-sm-3">
-                                    <ce-input name="Uplaoded" value="06/22/2009"> </ce-input>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <table class="w-100 results">
+                        <thead>
+                        <tr class="head">
+                            <td>Description</td>
+                            <td>File Name</td>
+                            <td>Uploaded</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="d in docs">
+                            <td>{{d.description}}</td>
+                            <td>{{d.filename}}</td>
+                            <td>{{d.uploaded}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </card> <!-- DOCUMENTS -->
             </div>
         </div>
@@ -719,50 +377,115 @@
                         }
                     ]
                 },
-                editing: '',
-                radios: {
-                    radio1: '1',
-                    radio2: '2',
-                    radio3: '2',
-                    radioOn: '2',
-                    radioOff: '2'
-                },
-                checkboxes: {
-                    first: false,
-                    second: false,
-                    a: false,
-                    b: false,
-                    c: false,
-                    unchecked: false,
-                    checked: true,
-                    disabledUnchecked: false,
-                    disabledChecked: true
-                },
-                finances: [
+                coms: [
                     {
-                        effective: '2011/01/01',
-                        salary: '$25.14',
-                        dues: '$15.00',
-                        pac: '$5.00'
+                        type: 'email',
+                        subject: 'ATS Field Realignment',
+                        sent: '09/24/2018 14:22:08',
+                        description: 'Brothers and Sisters,\n' +
+                            '\n' +
+                            '                                        Attached to this message, you will find the Memorandum of Understanding (MOU) between NATCA and the Agency regarding the implementation of the Agency’s Air Traffic Services Field Realignment (ATS Field Realignment or GM Realignment).\n' +
+                            '\n' +
+                            '                                        The MOU covers the Air Traffic Control (ATC), Traffic Management Unit (TMU), NOTAM, FSS, and Staff Support Specialist (SSS) bargaining units. We ask that you thoroughly review the MOU, so you are familiar with the relevant provisions of the agreement before the Agency’s implementation of the ATS Field Realignment presently scheduled for October 14, 2018.\n' +
+                            '\n' +
+                            '                                        The implementation of the ATS Field Realignment will have virtually no direct affect on members of the ATC/NOTAM and FSS bargaining units. For members working in ATC facilities that are part of the SSS and TMU bargaining units, the ATS Field Realignment will likely represent a change from current practices and may result in the identification of issues that were not initially contemplated. Both NATCA and the Agency have committed to addressing identified problems and concerns in a timely manner.\n' +
+                            '\n' +
+                            '                                        We have included a summary of the more relevant provisions of the MOU below:\n' +
+                            '\n' +
+                            '                                        • No change to the normal points of contact (e.g., communication, bargaining, and collaboration) between the Agency and Union for NATCA Representatives at the facility level.\n' +
+                            '                                        • Clarifies the procedures for the submittal and approval of leave for SSS.\n' +
+                            '                                        • Provides clarification and protection for SSS work assignments.\n' +
+                            '                                        • Ensures BUEs will not have their facility of record changed as a result of the Air Traffic Services Field Realignment and will continue to receive Controller Incentive Pay (CIP) and all other premiums, differentials, and allowances associated with their facility of record.\n' +
+                            '                                        • Addresses SSS performance ratings, feedback sessions, and Article 8/Article 9 meetings and the manner in which they may be conducted.\n' +
+                            '                                        • Expands “other facility duties” to include duties within a BUE’s District when such duties are assigned in accordance with Article 45 for the ATC and TMU bargaining units.\n' +
+                            '                                        • Ensures SSS can continue to maintain operational currency.\n' +
+                            '\n' +
+                            '                                        We understand the uncertainty associated with this change and have included as many protections as possible in the MOU. To assist us in addressing problems or issues arising from the implementation of the ATS Field Realignment, we are asking that you forward identified issues/ problems to your RVP.\n' +
+                            '\n' +
+                            '                                        Additionally, to help members better understand the MOU, we have established an email address at gm-questions@natcadc.org for questions regarding the MOU or implementation of the ATS Field Realignment.'
                     },
                     {
-                        effective: '2011/01/01',
-                        salary: '$25.14',
-                        dues: '$15.00',
-                        pac: '$5.00'
+                        type: 'email',
+                        subject: 'Request Volunteer: National Validation Team',
+                        sent: '09/24/2018 14:22:08',
+                    }
+                ],
+                docs: [
+                    {
+                        description: 'Membership Application',
+                        filename: '080412-doss-jason-member-app',
+                        uploaded: '04/12/2018'
                     },
                     {
-                        effective: '2011/01/01',
-                        salary: '$25.14',
-                        dues: '$15.00',
-                        pac: '$5.00'
+                        description: 'PAC Form',
+                        filename: '090622-doss-jason-pac-form',
+                        uploaded: '06/22/2009'
+                    },
+                ],
+                positions: [
+                    {
+                        name: 'IT Committee',
+                        level: 'Member',
+                        start: '10/06/2015',
+                        end: '',
+                        notes: ''
                     },
                     {
-                        effective: '2011/01/01',
-                        salary: '$25.14',
-                        dues: '$15.00',
-                        pac: '$5.00'
+                        name: 'Pay Committee',
+                        level: 'Member',
+                        start: '08/13/2018',
+                        end: '',
+                        notes: ''
                     },
+                    {
+                        name: 'Vice President',
+                        level: 'ZJX',
+                        start: '08/31/2014',
+                        end: '08/31/2015',
+                        notes: 'A note about this item'
+                    },
+                ],
+                periods: [
+                    {
+                        pp: 19,
+                        lines: [
+                            {
+                                date: '09/11/2018',
+                                type: 'Dues',
+                                amount: '$74.49'
+                            },
+                            {
+                                date: '09/11/2018',
+                                type: 'PAC',
+                                amount: '$35.00'
+                            },
+                            {
+                                date: '09/11/2018',
+                                type: 'Disaster Relief',
+                                amount: '$50.00'
+                            },
+                        ]
+                    },
+                    {
+                        pp: 18,
+                        lines: [
+                            {
+                                date: '09/11/2018',
+                                type: 'Dues',
+                                amount: '$74.49'
+                            },
+                            {
+                                date: '09/11/2018',
+                                type: 'PAC',
+                                amount: '$35.00'
+                            },
+                            {
+                                date: '09/11/2018',
+                                type: 'Disaster Relief',
+                                amount: '$50.00'
+                            },
+                        ]
+                    }
                 ],
                 history: [
                     {

@@ -1,27 +1,6 @@
 <template>
     <div class="dashboard">
-        <div class="alert-container" v-if="alertOne || alertTwo">
-            <div class="alert alert-info alert-with-icon" data-notify="container" v-if="alertOne" @click.prevent="alertOne = false">
-                <button type="button" aria-hidden="true" class="close">
-                    <i class="now-ui-icons ui-1_simple-remove"></i>
-                </button>
-                <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
-                <span data-notify="message">
-                        This is a notification about something important. These will indicate when action needs to be
-                    taken by a member to validate or correct information in the program.
-                    </span>
-            </div>
-            <div class="alert alert-danger alert-with-icon" data-notify="container" v-if="alertTwo" @click.prevent="alertTwo = false">
-                <button type="button" aria-hidden="true" class="close">
-                    <i class="now-ui-icons ui-1_simple-remove"></i>
-                </button>
-                <span data-notify="icon" class="fas fa-comment"></span>
-                <span data-notify="message">
-                        This is a leadership message. NATCA leaders can communicate directly through this notification panel
-                    to individuals or groups of individuals.
-                    </span>
-            </div>
-        </div>
+
         <div class="row">
             <div class="col">
                 <card class="stacked-form" title="Facility Info">

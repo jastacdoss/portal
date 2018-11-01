@@ -1,17 +1,34 @@
 <template>
     <div class="wrapper" :class="{'nav-open': $sidebar.showSidebar}">
         <notifications></notifications>
-        <side-bar title="NATCA Portal">
+        <side-bar title="NATCA Portal" class="admin" background-color="orange">
             <template slot-scope="props" slot="links">
+                <strong class="administering">Administering:</strong>
                 <user-menu title="Jason Doss"></user-menu>
                 <sidebar-item
                         :link="{name: 'Admin Dashboard', icon: 'fas fa-tachometer-alt', path: '/admin', exact: true}"></sidebar-item>
                 <sidebar-item
+                        :link="{name: 'Member Detail', icon: 'far fa-address-card', path: '/memberdetail'}"></sidebar-item>
+                <sidebar-item
+                        :link="{name: 'Grievances', icon: 'fas fa-paperclip', path: '/grievances'}"></sidebar-item>
+                <sidebar-item
                         :link="{name: 'Teams', icon: 'far fa-address-card', path: '/admin/teams'}"></sidebar-item>
                 <sidebar-item
-                        :link="{name: 'Officers', icon: 'fas fa-paperclip', path: '/admin/officers'}"></sidebar-item>
+                        :link="{name: 'Email Lists', icon: 'fas fa-mail-bulk', path: '/listserv'}"></sidebar-item>
+                <sidebar-item
+                        :link="{name: 'Seniority', icon: 'fas fa-users', path: '/seniority'}"></sidebar-item>
+                <sidebar-item
+                        :link="{name: 'PAC', icon: 'fas fa-dollar-sign', path: '/pac'}"></sidebar-item>
+                <sidebar-item
+                        :link="{name: 'Academy', icon: 'fas fa-graduation-cap', path: '/academy'}"></sidebar-item>
+                <sidebar-item
+                        :link="{name: 'Registrations', icon: 'far fa-calendar-alt', path: '/registrations'}"></sidebar-item>
+                <sidebar-item
+                        :link="{name: 'Resources', icon: 'fas fa-book-reader', path: '/resources'}"></sidebar-item>
                 <sidebar-item
                         :link="{name: 'Member Dashboard', icon: 'fas fa-user', path: '/dashboard'}"></sidebar-item>
+
+                <span class="loggedin"><strong>Logged in as Administrator:</strong><br> Jason Doss @ 18:03:23</span>
             </template>
         </side-bar>
         <div class="main-panel">

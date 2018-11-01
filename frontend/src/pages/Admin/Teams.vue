@@ -20,8 +20,8 @@
                                 </td>
                             </tr>
                             <tr v-for="l in t.lists">
-                                <td>
-                                    <router-link :to="'/admin/teams/' + l.listid" class="text-dark">{{l.name}}</router-link>
+                                <td v-if="isAdmin || (!isAdmin && l.subscribed)">
+                                    <router-link :to="teamPath + l.listid" class="text-dark">{{l.name}}</router-link>
                                 </td>
                             </tr>
                         </template>
@@ -98,7 +98,7 @@
                             {
                                 listid: 5,
                                 name: 'Executive Board',
-                                subscribed: 1
+                                subscribed: 0
                             }
                         ],
                     },
@@ -118,11 +118,22 @@
         },
         methods: {
             test() {
-                console.log(this.item);
+                console.log(this.$params);
             },
             addLine(o) {
                 o.push([])
             }
+        },
+        computed: {
+            isAdmin() {
+                return this.$route.path === '/admin/teams' ? true : false;
+            },
+            teamPath() {
+                return this.isAdmin ? '/admin/teams/' : '/teams/';
+            }
+        },
+        created() {
+            // console.log(this.$route);
         }
     }
 </script>

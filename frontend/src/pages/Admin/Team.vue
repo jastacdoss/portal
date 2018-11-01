@@ -11,7 +11,8 @@
                     </h6>
                     <ce-input name="Address" :value="description"></ce-input>
 
-                    <h6 class="card-subtitle  mt-3 mb-2 text-muted">
+                    <span v-if="isAdmin">
+                        <h6 class="card-subtitle  mt-3 mb-2 text-muted">
                         Team Roles and Permissions
                     </h6>
                     <table class="w-100 results">
@@ -26,13 +27,15 @@
                                 <td>{{r.name}}</td>
                                 <td class="text-center">
                                     <el-select class="select-danger" placeholder="Single Select" v-model="r.level">
-                                        <el-option v-for="(option, idx) in levels" class="select-danger" :value="option.name" :label="option.name" :key="idx">
+                                        <el-option v-for="(option, idx) in levels" class="select-danger"
+                                                   :value="option.name" :label="option.name" :key="idx">
                                         </el-option>
                                     </el-select>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    </span>
                 </card>
             </div>
             <div class="col">
@@ -45,14 +48,14 @@
                         <tr>
                             <td width="80%">List Name</td>
                             <td>Role</td>
-                            <td>Subscribed</td>
+                            <td v-if="isAdmin">Subscribed</td>
                         </tr>
                         </thead>
                         <tbody>
                         <tr v-for="m in members">
                             <td>{{m.name}}</td>
                             <td>{{m.role}}</td>
-                            <td class="text-center">
+                            <td class="text-center" v-if="isAdmin">
                                 <el-switch
                                         v-model="m.subscribed"
                                         active-color="#13ce66"
@@ -64,7 +67,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <span class="add-details mb-2"><i class="fas fa-plus"></i></span>
+                    <span class="add-details mb-2" v-if="isAdmin"><i class="fas fa-plus"></i></span>
                 </card>
             </div>
         </div>
@@ -180,8 +183,14 @@
                 o.push([])
             }
         },
+        computed: {
+            isAdmin() {
+                return _.startsWith(this.$route.path, '/admin/teams') ? true : false;
+            }
+        },
         created() {
             this.team = _.find(this.teams, {listid: this.$route.params.team});
+            console.log(this.isAdmin)
         }
     }
 </script>
