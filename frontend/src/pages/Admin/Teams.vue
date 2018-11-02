@@ -21,7 +21,7 @@
                             </tr>
                             <tr v-for="l in t.lists">
                                 <td v-if="isAdmin || (!isAdmin && l.subscribed)">
-                                    <router-link :to="teamPath + l.listid" class="text-dark">{{l.name}}</router-link>
+                                    <router-link :to="teamPath + t.id + '/' + l.listid" class="text-dark">{{l.name}}</router-link>
                                 </td>
                             </tr>
                         </template>

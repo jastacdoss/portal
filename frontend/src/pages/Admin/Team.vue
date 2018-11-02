@@ -4,9 +4,19 @@
             <div class="col">
                 <card>
                     <template slot="header">
-                        <h4 class="card-title"><i class="fas fa-mail-bulk"></i> {{team.name}}</h4>
+                        <h4 class="card-title"><i class="fas fa-mail-bulk"></i> Details</h4>
                     </template>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                    <h6 class="card-subtitle text-muted">
+                        Group Name
+                    </h6>
+                    {{group.name}}
+
+                    <h6 class="card-subtitle mt-2 text-muted">
+                        Team Name
+                    </h6>
+                    {{team.name}}
+
+                    <h6 class="card-subtitle mt-2 text-muted">
                         Description
                     </h6>
                     <ce-input name="Address" :value="description"></ce-input>
@@ -102,40 +112,63 @@
                 ],
                 teams: [
                     {
-                        listid: '0',
-                        name: 'NATCA Charitable Foundation',
-                        subscribed: 0
+                        id: '0',
+                        name: 'Global',
+                        lists: [
+                            {
+                                listid: '0',
+                                name: 'NATCA Charitable Foundation',
+                                subscribed: 0
+                            },
+                            {
+                                listid: '1',
+                                name: 'National Update',
+                                subscribed: 1
+                            },
+                        ]
                     },
                     {
-                        listid: '1',
-                        name: 'National Update',
-                        subscribed: 1
+                        id: '1',
+                        name: 'Internet Technology Committee',
+                        lists: [
+                            {
+                                listid: '2',
+                                name: 'Committee Members',
+                                subscribed: 1
+                            },
+                            {
+                                listid: '3',
+                                name: 'Website Workgroup',
+                                subscribed: 0
+                            }
+                        ],
+                    }, {
+                        id: '2',
+                        name: 'Jacksonville Center',
+                        lists: [
+                            {
+                                listid: '4',
+                                name: 'Members',
+                                subscribed: 1
+                            },
+                            {
+                                listid: '5',
+                                name: 'Executive Board',
+                                subscribed: 0
+                            }
+                        ],
                     },
                     {
-                        listid: '2',
-                        name: 'Committee Members',
-                        subscribed: 1
+                        id: '3',
+                        name: 'National',
+                        lists: [
+                            {
+                                listid: '6',
+                                name: 'Members',
+                                subscribed: 1
+                            }
+                        ],
                     },
-                    {
-                        listid: '3',
-                        name: 'Website Workgroup',
-                        subscribed: 0
-                    },
-                    {
-                        listid: '4',
-                        name: 'Members',
-                        subscribed: 1
-                    },
-                    {
-                        listid: '5',
-                        name: 'Executive Board',
-                        subscribed: 1
-                    },
-                    {
-                        listid: '6',
-                        name: 'Members',
-                        subscribed: 1
-                    }
                 ],
                 members: [
                     {
@@ -189,8 +222,10 @@
             }
         },
         created() {
-            this.team = _.find(this.teams, {listid: this.$route.params.team});
-            console.log(this.isAdmin)
+
+            this.team = _.find(this.teams, {id: this.$route.params.team});
+            this.group = _.find(this.team.lists, {listid: this.$route.params.subgroup});
+            console.log(this.group);
         }
     }
 </script>

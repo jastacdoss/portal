@@ -92,7 +92,7 @@ const routes = [
                 components: {default: Teams, header: DashboardHeader}
             },
             {
-                path: 'teams/:team',
+                path: 'teams/:team/:subgroup',
                 name: 'Team',
                 components: {default: Team, header: DashboardHeader}
             },

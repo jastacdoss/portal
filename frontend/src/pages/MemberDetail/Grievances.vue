@@ -47,7 +47,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><a href="#/">Overtime Skip</a></td>
+                            <td><a @click.prevent="viewGrievance(grievances[0])">Overtime Skip</a></td>
                             <td>04/08/2018</td>
                         </tr>
                         </tbody>

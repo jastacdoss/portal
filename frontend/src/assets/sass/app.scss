@@ -4,6 +4,16 @@
   background-color: lightgray;
 }
 
+a {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.sidebar, .navbar {
+  a {
+    text-decoration: none !important;
+  }
+}
+
 /* ALERTS */
 .alert-container {
   margin-top: -1.5em;
