@@ -17,6 +17,7 @@ import Academy from 'src/pages/MemberDetail/Academy.vue'
 import Registrations from 'src/pages/MemberDetail/Registrations.vue'
 import Resources from 'src/pages/MemberDetail/Resources.vue'
 import Seniority from 'src/pages/MemberDetail/Seniority.vue'
+import Calendar from 'src/pages/MemberDetail/Calendar.vue'
 
 // ADMIN
 import Teams from 'src/pages/Admin/Teams.vue'
@@ -62,6 +63,11 @@ const routes = [
                 path: 'officers',
                 name: 'Officers',
                 components: {default: Officers, header: DashboardHeader}
+            },
+            {
+                path: 'calendar',
+                name: 'Calendar',
+                components: {default: Calendar, header: DashboardHeader}
             }
         ]
     },
@@ -125,6 +131,11 @@ const routes = [
                 path: 'seniority',
                 name: 'Seniority',
                 components: {default: Seniority, header: DashboardHeader}
+            },
+            {
+                path: 'calendar',
+                name: 'Calendar',
+                components: {default: Calendar, header: DashboardHeader}
             }
         ]
     },

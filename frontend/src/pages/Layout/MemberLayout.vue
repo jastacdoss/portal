@@ -23,6 +23,8 @@
                 <sidebar-item
                         :link="{name: 'Registrations', icon: 'far fa-calendar-alt', path: '/registrations'}"></sidebar-item>
                 <sidebar-item
+                        :link="{name: 'Calendar', icon: 'fas fa-calendar', path: '/calendar'}"></sidebar-item>
+                <sidebar-item
                         :link="{name: 'Resources', icon: 'fas fa-book-reader', path: '/resources'}"></sidebar-item>
                 <sidebar-item
                         :link="{name: 'Admin', icon: 'fas fa-toolbox', path: '/admin'}"></sidebar-item>

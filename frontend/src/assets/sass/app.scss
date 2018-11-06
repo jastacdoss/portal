@@ -8,7 +8,7 @@ a {
   text-decoration: underline !important;
   cursor: pointer;
 }
-.sidebar, .navbar {
+.sidebar, .navbar, .calendar {
   a {
     text-decoration: none !important;
   }
@@ -104,7 +104,7 @@ a {
   background-color: #6e0000;
 }
 
-/** LINE GROUPS */
+///** LINE GROUPS */
 table {
   border-collapse: collapse;
   border: solid 1px $light-gray;
@@ -114,12 +114,13 @@ table {
     padding: 0.1em 0.3em;
   }
 
-  thead {
-    background-color: #0E2949;
-    color: $white-color;
-    font-weight: bold;
-  }
+  //thead {
+  //  background-color: #0E2949;
+  //  color: $white-color;
+  //  font-weight: bold;
+  //}
 }
+
 /* EL-TABLE MODS */
 .table > thead > tr > th, .el-table table > thead > tr > th {
   font-size: 1em;
