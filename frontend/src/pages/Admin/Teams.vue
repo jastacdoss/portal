@@ -4,7 +4,7 @@
             <div class="col">
                 <card>
                     <template slot="header">
-                        <h4 class="card-title"><i class="fas fa-mail-bulk"></i> Team Lists</h4>
+                        <h4 class="card-title"><i class="fas fa-mail-bulk"></i> Committees/Teams</h4>
                     </template>
                     <table class="w-100 results">
                         <thead>

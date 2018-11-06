@@ -54,6 +54,11 @@ const routes = [
                 components: {default: Team, header: DashboardHeader}
             },
             {
+                path: 'teams/:team/:subgroup',
+                name: 'Team',
+                components: {default: Team, header: DashboardHeader}
+            },
+            {
                 path: 'officers',
                 name: 'Officers',
                 components: {default: Officers, header: DashboardHeader}

@@ -11,7 +11,7 @@
                 <sidebar-item
                         :link="{name: 'Grievances', icon: 'fas fa-paperclip', path: '/grievances'}"></sidebar-item>
                 <sidebar-item
-                        :link="{name: 'Teams', icon: 'far fa-address-card', path: '/teams'}"></sidebar-item>
+                        :link="{name: 'Committees/Teams', icon: 'far fa-address-card', path: '/teams'}"></sidebar-item>
                 <sidebar-item
                         :link="{name: 'Email Lists', icon: 'fas fa-mail-bulk', path: '/listserv'}"></sidebar-item>
                 <sidebar-item

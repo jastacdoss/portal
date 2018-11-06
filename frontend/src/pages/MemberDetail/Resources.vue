@@ -2,12 +2,12 @@
     <div class="dashboard academy">
         <div class="row">
             <div class="col">
-                <card>
+                <card class="text-center">
                     <template slot="header">
                         <h4 class="card-title"><i class="fas fa-book-reader"></i> Resources</h4>
                     </template>
 
-                    <table class="w-75 mx-auto results">
+                    <table class="w-75 mx-auto results text-left">
                         <tbody>
                         <template v-for="r in resources">
                             <tr class="subhead">
@@ -20,7 +20,14 @@
                             </tr>
                         </template>
                         </tbody>
+                        <span class="add-details mb-2" @click="addLine(grievances)"><i class="fas fa-plus"></i></span>
+
                     </table>
+
+                    <span>
+                                            * Email files as attachment to email to <b>doss-40162@files.natca.net</b> to upload automatically.
+
+                    </span>
                 </card>
             </div>
         </div>
@@ -75,6 +82,16 @@
                                 name: 'MOUs',
                                 subscribed: 1
                             },
+                        ],
+                    },
+                    {
+                        id: 2,
+                        name: 'Personal',
+                        items: [
+                            {
+                                name: 'PersonalFile.jpg',
+                                subscribed: 1
+                            }
                         ],
                     },
                 ],
